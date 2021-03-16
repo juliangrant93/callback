@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link src="stylesheet" href="index.css">
+    <title>Callback</title>
+</head>
+<body>
+    <style>
+        body {
+          background-color: rgb(204, 206, 194);
+        }
+        
+        h1 {
+          color: white;
+          text-align: center;
+        }
+        
+        p {
+          font-family: verdana;
+          font-size: 20px;
+        }
+        </style>
+    <div class="background"></div>
+    <div id="demo">
+          
+    </div>
+   
+    <p>
+        <h2>Jordan 4 UNC</h2>
+        <h4>
+      This Jordan 4 is part of the UNC collection. They are expected to drop on April 28th of this year. 
+    </h4> 
+    </p>
+    <img src="otherimage.jpg"alt="Nice Kicks" style="width:80%">
+
+    <h2>I WANT THEM!!!</h2>
+<h1 id="demo"></h1>
+<div>
+    <script>
+        setInterval(myFunction, 1000);
+        
+        function myFunction() {
+          let d = new Date();
+          document.getElementById("demo").innerHTML=
+          d.getHours() + ":" +
+          d.getMinutes() + ":" +
+          d.getSeconds();
+        }
+        </script>
+</div>
+
+<!--<script>
+    setTimeout(function() { myFunction("Hello"); }, 3000);
+    
+    function myFunction(value) {
+      document.getElementById("demo").innerHTML = value;
+    }
+</script>-->
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
